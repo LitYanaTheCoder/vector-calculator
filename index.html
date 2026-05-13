@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vector Calculator Upgrade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vector Calculator</h1>
+        
+        <div class="input-group">
+            <label>Magnitude:</label>
+            <input type="number" id="vmag" placeholder="e.g. 10">
+            
+            <label>Angle (0-90°):</label>
+            <input type="number" id="vang" placeholder="e.g. 45">
+            
+            <label>Quadrant (1-4):</label>
+            <input type="number" id="vquad" min="1" max="4" placeholder="1">
+            
+            <button onclick="calculateVector()">Add Vector</button>
+        </div>
+
+        <hr>
+
+        <div class="results">
+            <p><strong>Current Vector:</strong> <span id="current">N/A</span></p>
+            <p><strong>Final Resultant:</strong> <span id="final">0i + 0j</span></p>
+        </div>
+
+        <h3>History</h3>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
